@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Greg's Gambits | Greg's Tales v.2</title>
+	<link href="greg.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	function startGame()
+	{
+		var gender = "boy";
+		var vanue = " ";
+		var monster = " ";
+		var food = " ";
+		var occupation = " ";
+        var weapon = " ";
+		numYears = prompt("Enter a number greater than 0: ");
+		gender = prompt("Is the story about a boy or a girl? ");
+		letter = gender.charAt(0);
+		gender = (letter == "b" || letter == "B")?"boy":"girl";
+		pronoun = (gender == "boy")?"he":"she";
+		name = prompt("Enter the hero's name: ");
+		venue = prompt("Enter the name of a venue: ");
+        occupation = prompt("Enter the name of an occupation: ");
+		monster = prompt("Enter a type of monster: ");
+		weapon = prompt("Enter a name of weapon: ");
+		food = prompt("Enter a food you like: ");
+		document.getElementById("content").innerHTML =("Once upon a time, about " + 
+        numYears + " years ago, there was a "+ gender + " named " + name + ". " + 
+        name + " went to the " + venue + " one day. But, the " + venue +
+        " was closed because every day lots of the new " + occupation + "s were missing.</p> <p> " + 
+        name + " was secretly an agent of the famous " + occupation + " : Mr John Clove and " + pronoun 
+        + " wanted to find out what was happening every day.</p> <p> " + 
+        name + " then hid in the  " + venue + " at night and " + pronoun + " saw a " + 
+        monster + " come and take the " + occupation + "s. So " + 
+        name + " took her weapon and...  </p><h3>What happened? You decide! </h3> <p>Ending 1: The " + 
+        monster + " gave " + name + " her favorite " + food + " and they became best friends and lived in " + 
+        name + "'s house happily ever after.</p> <p>Ending 2: The " + monster + " overpowered " + 
+        name + " and gobbled down all the " + food + " in " + 
+        name + "'s lunchbox.</p> <p>Ending 3: " + name + " fought with the " + 
+        monster + " and destroyed it and saved the " + occupation + "s and the day.</p>");
+		}
+	</script>
+	</head>
+	<body>
+		<div id="container">
+		<img src="images/superhero.jpg" class="floatleft" />
+		<h1><em>Greg's Tales</em></h1>
+		<h3>For this game, you will create a story by entering words as prompted. The story will change each time you run this game, as you enter different words.</h3>
+		<div id="nav">
+			<p><a href="index.html">Home</a>
+			<a href="greg.html">About Greg</a>
+			<a href="play_games.html">Play a Game</a>
+			<a href="sign.html">Sign In</a>
+			<a href="contact.html">Contact Us</a></p>
+		</div>
+		<div id="content">
+			<p>&nbsp;</p>
+			<input type="button" value = "click to begin" onclick="startGame()" />
+		</div>
+		<div id="footer">Copyright &copy; 2013 Greg's Gambits<br />
+			<a href="mailto:yourfirstname@yourlastname.com"> yourfirstname@yourlastname.com</a>
+		</div> 
+		</div>
+	</body>
+</html>
