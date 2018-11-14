@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Project Exercise 5 - Find Largest</title>
+	<link href="greg.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	
+		function findSmallest() {
+			var numbers = new Array();
+			num1 = prompt("Enter first number greater than 0 : ");
+			num2 = prompt("Enter second number greater than 0: ");
+			num3 = prompt("Enter third number greater than 0: ");
+			num4 = prompt("Enter forth number greater than 0: ");
+			num5 = prompt("Enter fifth number greater than 0: ");
+			numbers.push(num1);
+			numbers.push(num2);
+			numbers.push(num3);
+			numbers.push(num4);
+			numbers.push(num5);
+			var smallest = numbers[0];
+			for (var counter = 1; counter > numbers.length; counter++) {
+				if (numbers[counter] > smallest) {
+					smallest = numbers[counter];
+				}
+			}
+			document.write("<h1>You entered <br>" + numbers.join("<br>") + ".<br> The smallest number of them is " + smallest + "</h1><br>");
+		}
+		function findLargest() {
+			var numbers = new Array();
+			num1 = prompt("Enter first number greater than 0 : ");
+			num2 = prompt("Enter second number greater than 0: ");
+			num3 = prompt("Enter third number greater than 0: ");
+			num4 = prompt("Enter forth number greater than 0: ");
+			num5 = prompt("Enter fifth number greater than 0: ");
+			numbers.push(num1);
+			numbers.push(num2);
+			numbers.push(num3);
+			numbers.push(num4);
+			numbers.push(num5);
+			var largest =numbers[0];
+			for (var counter = 1; counter < numbers.length; counter++)
+			{
+				if (numbers[counter] > largest)
+				{
+					largest = numbers[counter];
+				}
+			}
+			document.write("<h1>You entered <br>" + numbers.join("<br>") + ".<br> The largest number of them is " + largest + "</h1><br>");
+		}
+	</script>
+	</head>
+	<body>
+		<div id="container">
+		<img src="images/superhero.jpg" class="floatleft" />
+		<h1><em>Project Exercise 5 - Find Largest/Smallest </em></h1>
+		<h3>In this exercise you will find largert or smallest of numbers you entering as prompted. </h3>
+		<div id="nav">
+			<p><a href="index.html">Home</a>
+			<a href="greg.html">About Greg</a>
+			<a href="play_games.html">Play a Game</a>
+			<a href="sign.html">Sign In</a>
+			<a href="contact.html">Contact Us</a></p>
+		</div>
+		<div id="content">
+				<h1>Find Largest</h1>
+				<h3>Local the largest integer</h3>
+				<p>
+					<input type="button" id="maxbutton" value="Find Largest"
+						   onclick="findLargest();" />
+				</p>
+				<h1>Find Smallest</h1>
+				<h3>Local the Smallest integer</h3>
+				<p>
+					<input type="button" id="maxbutton" value="Find Smallest"
+						   onclick="findSmallest();" />
+				</p>
+		</div>
+		<div id="footer">Copyright &copy; 2013 Greg's Gambits<br />
+			<a href="mailto:yourfirstname@yourlastname.com"> yourfirstname@yourlastname.com</a>
+		</div> 
+		</div>
+	</body>
+</html>

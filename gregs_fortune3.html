@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+        <title>Project Exercise 4 - Students array</title>
+        <link href="greg.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+        function makeArray() {
+        var students = new Array();
+            
+        students.push("Andy");
+        document.write("students.<b>push</b>(\"Andy\");<br>");
+        document.write("[ " + students + "]<br><br>");
+        
+        
+        students.push("George");
+        document.write("students.<b>push</b>(\"George\");<br>");
+        document.write("[ " + students + "]<br><br>");
+       
+    
+        students.push("Nneka");
+        document.write("students.<b>push</b>(\"Nneka\");<br>");
+        document.write("[ " + students + "]<br><br>");
+
+        students.unshift("Valeriy");
+        document.write("students.<b>unshift</b>(\"Valeriy\");<br>");
+        document.write("[ " + students + "]<br><br>");
+    
+        students.push("Krishna");
+        document.write("students.<b>push</b>(\"Krishna\");<br>");
+        document.write("[ " + students + "]<br><br>");
+    
+        
+        students.unshift("Elham");
+        document.write("students.<b>push</b>(\"Elham\");<br>");
+        document.write("[ " + students + "]<br><br>");
+    
+        var students2 = students.filter(student => student.length > 6);
+        document.write("students.<b>filter</b>(student => student.length > 6);<br>");
+        document.write("Student Array #1 [ " + students + "]<br><br>");
+        document.write("Student Array #2 [ " + students2 + "]<br><br>");
+            
+        var newStudents = students2.concat(students);
+        document.write("students2.<b>concat</b>(students);<br>");
+        document.write("New Student Array [ " + newStudents + "]<br><br>");
+     
+        newStudents.shift();
+        document.write("students.<b>shift</b>();<br>");
+        document.write("[ " + newStudents + "]<br><br>");
+    
+        newStudents.pop();
+        document.write("students.<b>pop</b>();<br>");
+        document.write("[ " + newStudents + "]<br><br>");
+    
+        newStudents.splice(2, 0, "George", "Nneka");
+        document.write("students.<b>splice</b>(2, 0, \"George\", \"Nneka\");<br>");
+        document.write("[ " + newStudents + "]<br><br>");
+    
+    
+        var slicedStudents = newStudents.splice(0, 6);
+        document.write("students.<b>slice</b>(0, 6);<br>");
+        document.write("[ " + slicedStudents + "]<br><br>");
+        
+    
+        slicedStudents.sort();
+        document.write("students.<b>sort</b>();<br>");
+        document.write("[ " + slicedStudents + "]<br><br>");
+    
+        slicedStudents.reverse();
+        document.write("students.<b>reverse</b>();<br>");
+        document.write("[ " + slicedStudents + "]<br><br>");
+    
+        }
+        </script> 
+</head>
+<body>
+<div id="container">
+
+ <img src="images/superhero.jpg" width="120" height="120" class="floatleft" />
+ <h1 id="logo"><em>Project Exercise 4 - Student Array</em></h1>
+ <h2 align="center">Ask Maître Doug anything about your code </h2>
+
+
+<p>&nbsp;</p>
+<div id="nav">
+  <p><a href="index.html">Home</a>
+  <a href="greg.html">About Greg</a>
+  <a href="play_games.html">Play a Game</a>
+  <a href="sign.html">Sign In</a>
+  <a href="contact.html">Contact Us</a></p>
+</div>
+<div id="content">
+	 <p class="floatright">Maître Doug<br /><br />
+	 <img src ="images/doug.jpg" /></p>
+	 <p>&nbsp;</p>
+   <p>How To Use Array Functions?<br>
+    <input type="button" id="usearray" value=" Use Arrays"
+        onclick="makeArray();" /></p>
+	 <p>&nbsp;</p>
+</div>
+<div id="footer">Copyright &copy; 2013 Greg's Gambits<br />
+<a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></div>
+</div>
+</body>
+</html>
