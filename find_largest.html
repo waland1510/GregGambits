@@ -12,11 +12,11 @@
 			num3 = prompt("Enter third number greater than 0: ");
 			num4 = prompt("Enter forth number greater than 0: ");
 			num5 = prompt("Enter fifth number greater than 0: ");
-			numbers.push(num1);
-			numbers.push(num2);
-			numbers.push(num3);
-			numbers.push(num4);
-			numbers.push(num5);
+			numbers.push(parseInt(num1));
+			numbers.push(parseInt(num2));
+			numbers.push(parseInt(num3));
+			numbers.push(parseInt(num4));
+			numbers.push(parseInt(num5));
 			var smallest = numbers[0];
 			for (var counter = 1; counter > numbers.length; counter++) {
 				if (numbers[counter] > smallest) {
@@ -32,11 +32,11 @@
 			num3 = prompt("Enter third number greater than 0: ");
 			num4 = prompt("Enter forth number greater than 0: ");
 			num5 = prompt("Enter fifth number greater than 0: ");
-			numbers.push(num1);
-			numbers.push(num2);
-			numbers.push(num3);
-			numbers.push(num4);
-			numbers.push(num5);
+			numbers.push(parseInt(num1));
+			numbers.push(parseInt(num2));
+			numbers.push(parseInt(num3));
+			numbers.push(parseInt(num4));
+			numbers.push(parseInt(num5));
 			var largest =numbers[0];
 			for (var counter = 1; counter < numbers.length; counter++)
 			{
@@ -58,8 +58,7 @@
 			<p><a href="index.html">Home</a>
 			<a href="greg.html">About Greg</a>
 			<a href="play_games.html">Play a Game</a>
-			<a href="sign.html">Sign In</a>
-			<a href="contact.html">Contact Us</a></p>
+			
 		</div>
 		<div id="content">
 				<h1>Find Largest</h1>

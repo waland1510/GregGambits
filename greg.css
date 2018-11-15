@@ -1,6 +1,5 @@
-body { background-color: #000040;
-       background-image: url(background.gif);
-       color: #88ffff;
+body { background-color: darkblue;
+	   color: #88ffff;
        font-family: Verdana, Arial, sans-serif;
 }
 #container { margin-left: auto;    
