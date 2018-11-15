@@ -10,65 +10,65 @@
             
         students.push("Andy");
         document.write("students.<b>push</b>(\"Andy\");<br>");
-        document.write("[ " + students + "]<br><br>");
+        document.write("[ " + students.join(", ") + "]<br><br>");
         
         
         students.push("George");
         document.write("students.<b>push</b>(\"George\");<br>");
-        document.write("[ " + students + "]<br><br>");
+        document.write("[ " + students.join(", ") + "]<br><br>");
        
     
         students.push("Nneka");
         document.write("students.<b>push</b>(\"Nneka\");<br>");
-        document.write("[ " + students + "]<br><br>");
+        document.write("[ " + students.join(", ") + "]<br><br>");
 
         students.unshift("Valeriy");
         document.write("students.<b>unshift</b>(\"Valeriy\");<br>");
-        document.write("[ " + students + "]<br><br>");
+        document.write("[ " + students.join(", ") + "]<br><br>");
     
         students.push("Krishna");
         document.write("students.<b>push</b>(\"Krishna\");<br>");
-        document.write("[ " + students + "]<br><br>");
+        document.write("[ " + students.join(", ") + "]<br><br>");
     
         
         students.unshift("Elham");
-        document.write("students.<b>push</b>(\"Elham\");<br>");
-        document.write("[ " + students + "]<br><br>");
+        document.write("students.<b>unshift</b>(\"Elham\");<br>");
+        document.write("[ " + students.join(", ") + "]<br><br>");
     
         var students2 = students.filter(student => student.length > 6);
         document.write("students.<b>filter</b>(student => student.length > 6);<br>");
-        document.write("Student Array #1 [ " + students + "]<br><br>");
-        document.write("Student Array #2 [ " + students2 + "]<br><br>");
+        document.write("Student Array #1 [ " + students.join(", ") + "]<br><br>");
+        document.write("Student Array #2 [ " + students2.join(", ") + "]<br><br>");
             
         var newStudents = students2.concat(students);
         document.write("students2.<b>concat</b>(students);<br>");
-        document.write("New Student Array [ " + newStudents + "]<br><br>");
+        document.write("New Student Array [ " + newStudents.join(", ") + "]<br><br>");
      
         newStudents.shift();
         document.write("students.<b>shift</b>();<br>");
-        document.write("[ " + newStudents + "]<br><br>");
+        document.write("[ " + newStudents.join(", ") + "]<br><br>");
     
         newStudents.pop();
         document.write("students.<b>pop</b>();<br>");
-        document.write("[ " + newStudents + "]<br><br>");
+        document.write("[ " + newStudents.join(", ") + "]<br><br>");
     
         newStudents.splice(2, 0, "George", "Nneka");
         document.write("students.<b>splice</b>(2, 0, \"George\", \"Nneka\");<br>");
-        document.write("[ " + newStudents + "]<br><br>");
+        document.write("[ " + newStudents.join(", ") + "]<br><br>");
     
     
         var slicedStudents = newStudents.splice(0, 6);
         document.write("students.<b>slice</b>(0, 6);<br>");
-        document.write("[ " + slicedStudents + "]<br><br>");
+        document.write("[ " + slicedStudents.join(", ") + "]<br><br>");
         
     
         slicedStudents.sort();
         document.write("students.<b>sort</b>();<br>");
-        document.write("[ " + slicedStudents + "]<br><br>");
+        document.write("[ " + slicedStudents.join(", ") + "]<br><br>");
     
         slicedStudents.reverse();
         document.write("students.<b>reverse</b>();<br>");
-        document.write("[ " + slicedStudents + "]<br><br>");
+        document.write("[ " + slicedStudents.join(", ") + "]<br><br>");
     
         }
         </script> 
