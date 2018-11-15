@@ -18,8 +18,8 @@
 			numbers.push(parseInt(num4));
 			numbers.push(parseInt(num5));
 			var smallest = numbers[0];
-			for (var counter = 1; counter > numbers.length; counter++) {
-				if (numbers[counter] > smallest) {
+			for (var counter = 1; counter < numbers.length; counter++) {
+				if (numbers[counter] < smallest) {
 					smallest = numbers[counter];
 				}
 			}
